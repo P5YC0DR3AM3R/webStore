@@ -41,15 +41,27 @@ router.get('/:id', (req, res) => {
 
 
 // create new product
-router.post('/', (req, res) => {
-  /* req.body should look like this...
-    {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
+router.post('/', async (req, res) => {
+  try {
+    let { product_name, price, stock } = req.body;
+
+    // Set a default price if none is provided
+    if (price === undefined) {
+      price = 19.99;
     }
-  */
+
+    const newProduct = await Product.create({
+      product_name,
+      price,
+      stock
+    });
+
+    res.status(201).json(newProduct);
+  } catch (error) {
+    console.error(`Error creating product: ${error.message}`);
+    res.status(500).json({ message: "Error creating product", error: error.message });
+  }
+
   Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model

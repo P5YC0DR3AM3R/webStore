@@ -23,7 +23,8 @@ Product.init(
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
       validate: {
-        isDecimal: true
+        isDecimal: true,
+        min: 0.01 // Ensures the price is at least 1 cent
       }
     },
     stock: {
@@ -31,7 +32,8 @@ Product.init(
       allowNull: false,
       defaultValue: 10,
       validate: {
-        isNumeric: true
+        isNumeric: true,
+        min: 0,
       }
     },
     category_id: {

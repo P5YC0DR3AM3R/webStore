@@ -33,9 +33,11 @@ node index.js
 
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
 
-https://drive.google.com/file/d/1oD631dYUyxpu1w45FxRV2u2SRzrU0Zkn
+Video link:
 
-<video src="./Assets/Sequence_2.MP4" controls></video>
+https://drive.google.com/file/d/15CyK3NPgWcglq9VXx6shqFfj12OVO62d/view?usp=sharing
+
+<video src="https://drive.google.com/file/d/15CyK3NPgWcglq9VXx6shqFfj12OVO62d/view?usp=sharing" controls></video>
 
 ## License
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)

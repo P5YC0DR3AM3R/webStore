@@ -1,3 +1,9 @@
+> **Status:** classroom exercise, 2024. Not a Phygital-DevOps production app.
+>
+> Sequelize e-commerce API. Needs local Postgres. No storefront.
+>
+> 2026 baseline: secrets stay out of source, Actions are pinned, placeholder packages are gone, CI checks this tree.
+
 # E-Commerce Back End
 
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
